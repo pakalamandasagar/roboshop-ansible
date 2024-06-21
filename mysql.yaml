@@ -7,13 +7,13 @@
 
   - name: setup mysql5.7 repo
     ansible.builtin.copy:
-     src: mysql.repo
-     dest: /etc/yum.repos.d/mysql.repo
+      src: mysql.repo
+      dest: /etc/yum.repos.d/mysql.repo
 
   - name: install mysql server
     ansible.builtin:package:
-     name: mysql-community-server
-     state: present
+      name: mysql-community-server
+      state: present
 
   - name: start and enable mysql
     ansible.builtin.service:
