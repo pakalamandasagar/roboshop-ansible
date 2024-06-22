@@ -38,4 +38,5 @@
       name: nginx
       state: restarted
       boolean: true
+      enabled: yes 
       
